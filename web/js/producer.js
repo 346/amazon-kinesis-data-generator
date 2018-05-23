@@ -256,7 +256,7 @@ function init(){
     });
 
     function getCleanedTemplate() {
-        return $("#recordTemplate").val().trim().replace(/\n/g, "").replace("{{current.timestamp}}", "{{date.now}}");
+        return $("#recordTemplate").val().replace(/\n/g, "").replace("{{current.timestamp}}", "{{date.now}}");
     }
 
     function updateKinesisList() {
